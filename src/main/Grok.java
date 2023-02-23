@@ -31,10 +31,13 @@ public class Grok {
     public boolean isDead(){
         return false;
     }
+
     public int getPowerSupply(){
-        return 0;
+        return powerSupply;
     }
 
+
+    //DO NOT TOUCH THIS METHOD
     @Override
     public String toString() {
         return ("Power: "+powerSupply+", Alive: "+isAlive);
