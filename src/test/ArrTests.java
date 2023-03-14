@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import main.ArrayPractice;
 
+import java.util.Arrays;
+
 public class ArrTests {
     ArrayPractice subject = new ArrayPractice();
     @Test
@@ -17,10 +19,10 @@ public class ArrTests {
     public void Test2(){
         int [] expected = new int[]{1,2,3,4,5,6,7,8,9,10};
         int [] actual = subject.makeArray(10);
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(Arrays.toString(expected), Arrays.toString(actual));
         expected = new int[]{1,2,3,4,5,6,7,8,9,10};
         actual = subject.makeArray(5);
-        Assertions.assertEquals(expected, actual, "AHHHHHHHHH");
+        Assertions.assertEquals(Arrays.toString(expected), Arrays.toString(actual), "AHHHHHHHHH");
     }
 
     @Test
@@ -33,6 +35,7 @@ public class ArrTests {
         Assertions.assertEquals(expected, actual);
         expected = "EW LD";
         names = new String[][]{new String[]{"Elijah", "Wallace"}, new String[]{"Layla", "Davis"}};
+        actual = subject.initials(names);
         Assertions.assertEquals(expected, actual);
     }
 
