@@ -20,7 +20,7 @@ public class ArrTests {
         int [] expected = new int[]{1,2,3,4,5,6,7,8,9,10};
         int [] actual = subject.makeArray(10);
         Assertions.assertEquals(Arrays.toString(expected), Arrays.toString(actual));
-        expected = new int[]{1,2,3,4,5,6,7,8,9,10};
+        expected = new int[]{1,2,3,4,5};
         actual = subject.makeArray(5);
         Assertions.assertEquals(Arrays.toString(expected), Arrays.toString(actual), "AHHHHHHHHH");
     }
