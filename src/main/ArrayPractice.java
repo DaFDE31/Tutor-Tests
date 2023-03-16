@@ -12,6 +12,10 @@ public class ArrayPractice {
         return null;
     }
 
+    public int indexOne (int [] arr){
+        return arr[0];
+    }
+
     public String initials(String[][] arr){
         //arr is an array of arrays of names
         //Make a code that lists the initials of each name;

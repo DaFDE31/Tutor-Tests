@@ -16,6 +16,13 @@ public class ArrTests {
     }
 
     @Test
+    public void Test1_5(){
+        int expected = 2;
+        int actual = subject.indexOne(new int[]{2, 1,0});
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void Test2(){
         int [] expected = new int[]{1,2,3,4,5,6,7,8,9,10};
         int [] actual = subject.makeArray(10);
